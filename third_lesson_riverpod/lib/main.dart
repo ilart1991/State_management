@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:third_lesson_ssm/presentation/pages/homepage.dart';
+import 'package:third_lesson_riverpod/presentation/pages/homepage.dart';
 
 void main() {
   runApp(const MyApp());

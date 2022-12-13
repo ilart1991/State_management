@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:third_lesson_ssm/data/variables.dart';
+import 'package:third_lesson_riverpod/data/variables.dart';
 
 class MyListCartView extends StatefulWidget {
   @override

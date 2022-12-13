@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:third_lesson_ssm/data/variables.dart';
-import 'package:third_lesson_ssm/presentation/widgets/my_list_cart_view.dart';
-import 'package:third_lesson_ssm/presentation/widgets/my_list_items_view.dart';
+import 'package:third_lesson_riverpod/data/variables.dart';
+import 'package:third_lesson_riverpod/presentation/widgets/my_list_cart_view.dart';
+import 'package:third_lesson_riverpod/presentation/widgets/my_list_items_view.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
