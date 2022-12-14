@@ -13,7 +13,6 @@ class HomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-
   void _onBarTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -22,7 +21,7 @@ class _MyHomePageState extends State<HomePage> {
 
   static final List<Widget> _pages = <Widget>[
     MyListItemsView(),
-    MyListCartView(),
+    const MyListCartView(),
   ];
 
   @override
