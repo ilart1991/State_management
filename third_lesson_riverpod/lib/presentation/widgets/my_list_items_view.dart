@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import '../../domain/functions.dart';
+import '../../data/lists_notifier.dart';
 
 final listsProvider = ChangeNotifierProvider((ref) => ListsNotifier());
 

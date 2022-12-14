@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../domain/functions.dart';
+import '../../data/pages_notifier.dart';
 
 final pagesProvider = ChangeNotifierProvider((ref) => PagesNotifier());
 int selectedIndex = 0;
