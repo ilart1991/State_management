@@ -47,7 +47,7 @@ class MyListItemsView extends StatelessWidget {
                                 ),
                       onPressed: () {
                         bloc.itemIndex = index;
-                        bloc.action.add(BlocEvents.onItemTapped);
+                        bloc.onItemTap();
                       },
                     ),
                   ],
