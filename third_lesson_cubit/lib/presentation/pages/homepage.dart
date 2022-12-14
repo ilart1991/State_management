@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   final String title;
   static final List<Widget> _pages = <Widget>[
     const MyListItemsView(),
-    MyListCartView(),
+    const MyListCartView(),
   ];
 
   @override
@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
             currentIndex: snapshot.data!,
             onTap: (value) {
               bloc.pageIndex = value;
-              bloc.action.add(BlocEvents.changePage);
+              bloc.changePage();
             },
           ),
           body: HomePage._pages.elementAt(snapshot.data!),
