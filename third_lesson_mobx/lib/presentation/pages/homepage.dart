@@ -4,12 +4,12 @@ import 'package:third_lesson_mobx/presentation/widgets/my_list_cart_view.dart';
 import 'package:third_lesson_mobx/presentation/widgets/my_list_items_view.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key, required this.title});
+  const HomePage({super.key, required this.title});
   final String title;
 
   static final List<Widget> _pages = <Widget>[
-    MyListItemsView(),
-    MyListCartView(),
+    const MyListItemsView(),
+    const MyListCartView(),
   ];
 
   @override

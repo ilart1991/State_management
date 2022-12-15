@@ -20,7 +20,7 @@ class _MyHomePageState extends State<HomePage> {
   }
 
   static final List<Widget> _pages = <Widget>[
-    MyListItemsView(),
+    const MyListItemsView(),
     const MyListCartView(),
   ];
 
