@@ -7,11 +7,11 @@ import 'package:third_lesson_bloc/presentation/widgets/my_list_items_view.dart';
 final Bloc bloc = Bloc();
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key, required this.title});
+  const HomePage({super.key, required this.title});
   final String title;
   static final List<Widget> _pages = <Widget>[
     const MyListItemsView(),
-    MyListCartView(),
+    const MyListCartView(),
   ];
 
   @override
