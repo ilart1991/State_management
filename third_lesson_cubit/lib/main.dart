@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(title: "e-commerce cubit"),
+      home: const HomePage(title: "e-commerce cubit"),
     );
   }
 }

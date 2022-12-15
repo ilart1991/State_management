@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(title: 'e-commerce hooks_riverpod'),
+      home: const HomePage(title: 'e-commerce hooks_riverpod'),
     );
   }
 }

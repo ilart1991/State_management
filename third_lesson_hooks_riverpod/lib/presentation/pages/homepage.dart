@@ -12,7 +12,7 @@ List<BottomNavigationBarItem> tabs = [
 ];
 
 class HomePage extends ConsumerWidget {
-  HomePage({super.key, required this.title});
+  const HomePage({super.key, required this.title});
   final String title;
 
   @override
@@ -36,7 +36,7 @@ class HomePage extends ConsumerWidget {
         body: Consumer(
           builder: (context, ref, child) {
             final pagesNotifier = ref.watch(pagesProvider);
-            return pagesNotifier.pages2.elementAt(selectedIndex);
+            return pagesNotifier.pages.elementAt(selectedIndex);
           },
         ));
   }
