@@ -30,36 +30,8 @@ class _MyHomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     List<BottomNavigationBarItem> tabs = [
       const BottomNavigationBarItem(label: "Главная", icon: Icon(Icons.home)),
-      BottomNavigationBarItem(
-        label: "Корзина",
-        icon: Stack(
-          children: <Widget>[
-            const Icon(Icons.shopping_cart),
-            Positioned(
-              right: 0,
-              child: Container(
-                padding: const EdgeInsets.all(2),
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                constraints: const BoxConstraints(
-                  minWidth: 15,
-                  minHeight: 15,
-                ),
-                child: Text(
-                  context.watch<ToTrash>().itemsInCart.length.toString(),
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 10,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            )
-          ],
-        ),
-      ),
+      const BottomNavigationBarItem(
+          icon: Icon(Icons.shopping_cart_outlined), label: "Корзина")
     ];
 
     return Scaffold(

@@ -4,14 +4,19 @@ import 'package:third_lesson_mobx/presentation/widgets/my_list_cart_view.dart';
 import 'package:third_lesson_mobx/presentation/widgets/my_list_items_view.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key, required this.title});
+  HomePage({super.key, required this.title});
   final String title;
 
+  static final List<Widget> _pages = <Widget>[
+    MyListItemsView(),
+    MyListCartView(),
+  ];
+
   @override
-  State<HomePage> createState() => _MyHomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
   void _onBarTapped(int index) {
@@ -19,11 +24,6 @@ class _MyHomePageState extends State<HomePage> {
       _selectedIndex = index;
     });
   }
-
-  static final List<Widget> _pages = <Widget>[
-    MyListItemsView(),
-    MyListCartView(),
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class _MyHomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
           items: tabs, currentIndex: _selectedIndex, onTap: _onBarTapped),
-      body: _pages.elementAt(_selectedIndex),
+      body: HomePage._pages.elementAt(_selectedIndex),
     );
   }
 }

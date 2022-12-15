@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-
 import 'item_model.dart';
 
 List<BottomNavigationBarItem> tabs = [
   const BottomNavigationBarItem(icon: Icon(Icons.home), label: "Главная"),
-  const BottomNavigationBarItem(icon: Icon(Icons.list), label: "Корзина")
+  const BottomNavigationBarItem(
+      icon: Icon(Icons.shopping_cart_outlined), label: "Корзина")
 ];
 
 List<ItemModel> items = [
